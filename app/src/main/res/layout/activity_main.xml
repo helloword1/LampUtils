@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/homepage_bg"
+    android:orientation="vertical"
+    tools:context="com.example.jjt_ssd.streetlamp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#01000000">
+
+        <TextView
+            android:id="@+id/DTimes"
+            android:layout_width="200px"
+            android:layout_height="33px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="86px"
+            android:layout_marginTop="28px"
+            android:gravity="right"
+            android:textColor="#bdbdbd"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/MAINSetting"
+            android:layout_width="33px"
+            android:layout_height="33px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="413px"
+            android:background="@mipmap/homepage_setting" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/homepage_em">
+
+            <TextView
+                android:id="@+id/TemperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="42dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:layout_toRightOf="@+id/TemperatureText"
+                android:text="°"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/HumidityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_below="@+id/TemperatureText"
+                android:layout_marginTop="42dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/HumidityText"
+                android:layout_toRightOf="@+id/HumidityText"
+                android:text="%"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/WindPowerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="42dp"
+                android:layout_below="@id/HumidityText"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/WindPowerText"
+                android:layout_toRightOf="@+id/WindPowerText"
+                android:text="级"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/PM2.5a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="128dp"
+                android:layout_marginTop="42dp"
+                android:layout_below="@id/WindPowerText"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignTop="@id/PM2.5a"
+                android:layout_toRightOf="@+id/PM2.5a"
+                android:text="μg/m³"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/EnvironmentalMonitoring"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#01000000" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:background="@mipmap/homepage_ca" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/homepage_cus">
+
+            <TextView
+                android:id="@+id/MAINCusZH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36px"
+                android:layout_marginTop="120px"
+                android:textColor="@color/colorBlack"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/MAINCusEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="54dp"
+                android:layout_below="@id/MAINCusZH"
+                android:textColor="@color/colorBlack"
+                android:textSize="14px" />
+
+            <Button
+                android:id="@+id/Customer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransParent" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/MAP"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:background="@mipmap/homepage_map" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingLeft="56dp"
+        android:paddingRight="56dp">
+
+        <Button
+            android:id="@+id/GreenEnergy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/homepage_eg" />
+
+        <Button
+            android:id="@+id/Introduce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_weight="1"
+            android:background="@mipmap/homepage_it" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#00000000" />
+</LinearLayout>

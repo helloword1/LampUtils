@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@color/colorTransParent"
+    >
+
+<RelativeLayout
+    android:id="@+id/SETRelat"
+    android:layout_marginTop="68px"
+    android:background="@color/colorTransParent"
+    android:layout_width="match_parent"
+    android:layout_height="60px">
+
+    <TextView
+        android:id="@+id/SETTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35px"
+        android:text="这个是测试用条目" />
+
+    <ImageView
+        android:id="@+id/SETImage"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/setting_goin"
+        android:layout_marginRight="45px"
+        android:clickable="true"
+        />
+
+</RelativeLayout>
+
+
+</LinearLayout>

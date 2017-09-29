@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context=".SettingPage.ExternalDeviceActivity">
+    <include android:id="@+id/EXTdevBase" layout="@layout/activity_base" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58px"
+            android:orientation="vertical"
+            android:divider="@color/colorTransParent"
+            android:id="@+id/EXTdevList"
+            >
+        </ListView>
+
+</RelativeLayout>

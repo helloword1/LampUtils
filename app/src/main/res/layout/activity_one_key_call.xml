@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:id="@+id/OKCBackgroud"
+    tools:context="com.example.jjt_ssd.streetlamp.OneKeyCallActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="110"
+        android:textSize="50px"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90px"
+        />
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24px"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170px"
+        android:id="@+id/OKCTimes"
+        />
+    <com.example.jjt_ssd.streetlamp.Tools.WaterWaveView
+        android:layout_width="380px"
+        android:layout_height="380px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="240px"
+        android:scaleType="centerCrop"
+        android:id="@+id/OKCWaterView"
+        />
+    <ImageView
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_marginTop="405px"
+        android:layout_marginLeft="215px"
+        android:background="@mipmap/phone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="如误按紧急拨号按钮，可重按一次取消拨号！"
+        android:textSize="16px"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="675px"
+        />
+
+</RelativeLayout>

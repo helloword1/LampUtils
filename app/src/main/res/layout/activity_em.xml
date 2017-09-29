@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/environmentalmonitoring"
+    tools:context="com.example.jjt_ssd.streetlamp.EMActivity">
+
+    <include
+        android:id="@+id/includeBase"
+        layout="@layout/activity_base" />
+
+    <RelativeLayout
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="152px"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/EMTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="90sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/EMTemperature"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/EMTemperature"
+            android:text="°"
+            android:textColor="@color/colorWhite"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/EMHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="430px"
+        android:layout_marginTop="174px"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="174px"
+        android:layout_toRightOf="@+id/EMHumidity"
+        android:text="%"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/EMWindPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="430px"
+        android:layout_marginTop="252px"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="252px"
+        android:layout_toRightOf="@+id/EMWindPower"
+        android:text="级"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/EMPM2.5a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="660px"
+        android:layout_marginTop="174px"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="174px"
+        android:layout_toRightOf="@+id/EMPM2.5a"
+        android:text="μg/m³"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/EMNoise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="660px"
+        android:layout_marginTop="252px"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/EMNoise"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/EMNoise"
+        android:text="dB"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+
+        android:layout_width="610px"
+        android:layout_height="58px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/EMMidBtnTem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#01000000"
+                android:text="温度"
+                android:textColor="@color/colorSelect"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/EMMidBtnHum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#01000000"
+                android:text="湿度"
+                android:textColor="@color/colorNormal"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/EMMidBtnWin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#01000000"
+                android:text="风力"
+                android:textColor="@color/colorNormal"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/EMMidBtnPM2.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#01000000"
+                android:text="PM2.5"
+                android:textColor="@color/colorNormal"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/EMMidBtnNoi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#01000000"
+                android:text="噪声"
+                android:textColor="@color/colorNormal"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/EMRLImage"
+            android:layout_width="match_parent"
+            android:layout_height="6px"
+            android:layout_marginTop="46px">
+
+            <ImageView
+                android:id="@+id/EMSlider"
+                android:layout_width="120px"
+                android:layout_height="match_parent"
+                android:background="@mipmap/environmentalmonitoring_tab" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="480px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480px">
+
+        <TextView
+            android:id="@+id/EMCompany"
+            android:layout_width="50px"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#bdbdbd"
+            android:textSize="16px" />
+
+        <ImageView
+            android:id="@+id/EMLeftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100px"
+            android:layout_marginStart="50dp"
+            android:padding="10px"
+            android:layout_toEndOf="@+id/EMCompany"
+            android:src="@drawable/environmentalmonitoring_previous"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/EMDataTimes"
+            android:layout_width="148px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="132px"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="16px" />
+
+        <ImageView
+            android:id="@+id/EMRightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280px"
+            android:padding="10px"
+            android:src="@drawable/environmentalmonitoring_net"
+            android:textColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/EMTodayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:layout_marginLeft="368px"
+            android:src="@drawable/environmentalmonitoring_today"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <lecho.lib.hellocharts.view.LineChartView
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="520px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px" />
+</RelativeLayout>

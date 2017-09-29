@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_imageview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/MAPDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/MAPImageOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/MAPImageTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/MAPPrevious"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="650px"
+        android:background="@mipmap/map_previous" />
+
+    <Button
+        android:id="@+id/MAPNext"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="650px"
+        android:background="@mipmap/map_next" />
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jjt_ssd.streetlamp">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 设置WIFI权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".AppData"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="智能路灯"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EMActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ZRIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CMIntroduceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewNergyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BasePictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingPage.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Camera.CamareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingPage.ExternalDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OneKeyCallActivity"
+            android:theme="@style/myTransparent" />
+        <activity
+            android:name=".Camera.CamareActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Camera.CameraCallActivity"
+            android:screenOrientation="portrait"/>
+        <service android:name=".mqtt.MQTTService"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SETAlert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2D3336"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:text="网络"
+        android:textColor="@color/colorNormal"
+        android:textSize="16px" />
+
+    <TextView
+        android:id="@+id/NETWorkIP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/colorWhite"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/NETWorkGateway"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/colorWhite"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/NETWorkMAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/colorWhite"
+        android:textSize="20px" />
+
+</LinearLayout>
